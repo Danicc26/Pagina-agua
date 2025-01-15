@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="es_MX">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Danicc" />
+	<meta name="copyright" content="Danicc" />
+	<meta name="keywords" content="agua, prevención, cuidado, cuidar"/>
+	<link rel="stylesheet" href="css/styles.css?v=1">
+	<link rel="stylesheet" href="css/fonts.css?v=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+	<title>Consumo de agua UAM</title>
+</head>
+<body>
+	<div id="cover" style="
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 10;
+	background: #FFF;
+	width: 100vw;
+	height: 100vh;
+	">
+	</div>
+	<!-- * /HEADER/ * -->
+	<header class="bg-primary-subtle">
+		<div class="bg-primary container-fluid"> <!-- Cambiado a container-fluid para ancho completo -->
+			<nav class="px-2 navbar navbar-expand-xl bg-primary" style="width: 100%;" data-bs-theme="dark">
+				<div class="container-fluid"> <!-- Asegura el ancho completo -->
+					<a href="http://UAM.mx/">
+						<img src="res/img/Logos UAM/fonfo.png" alt="UAM" height="50" class="me-3">
+					</a>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-6">
+							<li class="nav-item">
+								<a class="nav-link active" href="index.html">Inicio</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="res/docs/tabla.xlsx">Datos</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="res/docs/escrito.pdf">Escrito</a>
+							</li>
+						</ul>
+					</div>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+				</div>
+			</nav>
+		</div>
+	</header>
+	
+						<!--<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Dropdown
+							</a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#">Action</a></li>
+								<li><a class="dropdown-item" href="#">Another action</a></li>
+								<li><hr class="dropdown-divider"></li>
+								<li><a class="dropdown-item" href="#">Something else here</a></li>
+							</ul>
+						</li>-->
+					</ul>
+				</a>
+			</div>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			</div>
+			</nav>
+			</div>
+			</header>
+			<div class="bg-primary-subtle p-0">
+				<div class="container-fluid p-0"> <!-- Cambiado de container a container-fluid -->
+					<marquee scrollamount="5" class="m-0 bg-info bg-gradient text-dark opacity-75">
+						<h1>Consumo del agua en UAM Lerma</h1>
+					</marquee>
+				</div>
+			</div>
+			
+	<!-- * /HEADER/ * -->
+	<div class="text-container">
+		<p>
+			La gestión del agua en la Unidad Lerma de la UAM es un tema de gran relevancia en el contexto actual, donde la sostenibilidad y el uso responsable de los recursos hídricos son fundamentales. A medida que el cambio climático y la escasez de agua se convierten en preocupaciones globales, en  UAM Lerma es importante implementar diversas estrategias para optimizar el uso del agua y fomentar una cultura de concientización entre su comunidad.
+		</p>
+	</div>
+	<style>
+		  .text-container {
+        text-align: justify; /* Justifica el texto */
+        margin: 20px auto; /* Agrega un margen superior de 20px y centra horizontalmente */
+        width: 80%; /* Asegura que el texto ocupe el 80% del ancho de la página */
+        max-width: 1200px; /* Limita el ancho máximo en pantallas grandes */
+        padding-bottom: 0; /* Elimina cualquier relleno innecesario */
+    }
+	
+		body {
+			margin: 0; /* Elimina márgenes predeterminados del cuerpo de la página */
+			padding: 0; /* Elimina relleno predeterminado del cuerpo de la página */
+		}
+	
+		
+	</style>
+<aside>
+	<style type="text/css">
+		#contentTable {
+			z-index: 5;
+			left: 20px;
+			top: 180px;
+			transition: all ease-in-out 100ms;
+		}
+
+		#contentTable:has(#hiddableIndex.d-none) {
+			left: -30px;
+			transform: rotate(90deg);
+		}
+		
+	</style>
+	<div id="contentTable" class="card position-fixed">
+		<a href="javascript:toggleIndex()" class="card-header btn btn-light"><b class="me-3"><big>Índice</big></b></a>
+	    <div class="card-body p-0 d-none visually-hidden" id="hiddableIndex">
+	    	<div class="list-group list-group-flush" id="indexTable">
+				<a class="list-group-item list-group-item-action" href="#SobreElAgua">¿Sabias Qué?</a>
+				<a class="list-group-item list-group-item-action" href="#CuidadoDelAgua">Recoleción de datos</a>
+				<a class="list-group-item list-group-item-action" href="#ComoCuidarElAgua">Medidas preventivas</a>
+				<a class="list-group-item list-group-item-action" href="#CollageAgua">Galeria</a>
+				
+			</div>
+	    </div>
+	</div>
+</aside>
+
+<main data-bs-spy="scroll" data-bs-target="#indexTable" data-bs-smooth-scroll="true" class="container p-3 m-auto rounded" style="background: linear-gradient(to bottom, rgba(243,255,255,0.7) 0%, rgba(243,255,255,0.6) 20%, rgba(243,255,255,0.7));"> 
+		<!-- ! CONTENT ! -->
+	<section id="SobreElAgua" class="container">
+		<div class="row">
+			<div class="d-none d-md-block col-md-2 col-lg-3 col-xl"></div>
+			<div class="col container">
+				<div style="font-size: 3rem;" id="TITLE" class="mx-auto">
+					
+				</div>
+			</div>
+			<div class="col"></div>
+		</div>
+		<div id="homeCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#homeCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active" style="overflow-x: hidden;">
+					<img src="res/img/edificio.jpg" class="d-block" alt="Sabías">
+					<div>
+						<div class="carousel-caption d-none d-md-block bg-black rounded-1 px-3"  style="--bs-bg-opacity: .5;">
+							<h5>¿Sabías Qué?</h5>
+							<p>Los modulos sanitarios del O y P son los espacios que mas demanda de recurso hidrico presentan asi como el area de lavado del losa en el comedor.</i></p>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item" style="overflow-x: hidden;">
+					<img src="res/img/consumo.jpg" class="d-block" alt="Sabías">
+					<div>
+						<div class="carousel-caption d-none d-md-block bg-black rounded-1 px-3"  style="--bs-bg-opacity: .5;">
+							<h5>¿Sabías Qué?</h5>
+							<p>En 2023 el consumo de agua en la unidad Lerma fue de 7,415 metros cúbicos.
+								Esto es comparable al uso doméstico promedio de agua para 370 hogares mexicanos durante un año.</p>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item" style="overflow-x: hidden;">
+					<img src="res/img/pluvial.jpeg" class="d-block" alt="Sabías">
+					<div>
+						<div class="carousel-caption d-none d-md-block bg-black rounded-1 px-3"  style="--bs-bg-opacity: .5;">
+							<h5>¿Sabías Qué?</h5>
+							<p>En la unidad se captan aguas pluviales mediante rejillas instaladas en aulas ligeras, las cuales se almacenan en una cisterna y se reutilizan en sanitarios para usos no de primer contacto.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button class="carousel-control-prev car-control" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Anterior</span>
+			</button>
+			<button class="carousel-control-next car-control" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Siguiente</span>
+			</button>
+		</div>
+	</section>
+	<!---------------------><hr class="border border-primary border-2 opacity-75"><!------------------------->
+	<section id="CuidadoDelAgua" class="container">
+		<div class="row bg-light">
+			<button class="btn btn-primary card col p-0 mt-5 m-3 h-50" data-bs-toggle="modal" data-bs-target="#modalCuidadoAgua">
+				<img src="res/img/hecho.png" alt="Agua pluvial" width="100%" class="border border-3 border-info rounded">
+				<div class="card-body">
+					<font class="Gloucester" align="center">
+						<h2 class="m-0">Recolección de Datos</h2>
+					</font>
+				</div>
+			</button>
+
+			<div class="col my-3 mx-3 p-0" style="text-decoration: none; display: inline-block;">
+				<font class="Gloucester" align="center">
+					<h2 class="m-0 text-primary">Hacia un uso responsable de los recursos hídricos</h2>
+				</font>
+				<p align="justify">
+
+					El proyecto busca atender una problemática urgente: la gestión eficiente del agua en la UAM Lerma, donde, si bien el consumo actual se mantiene dentro de niveles considerados normales, aún no se han implementado tecnologías clave como hidromedidores que permitan un monitoreo detallado. Esto resulta crítico ante el constante crecimiento de la matrícula estudiantil y las futuras ampliaciones de la infraestructura universitaria, que inevitablemente incrementarán la demanda hídrica.</p>
+				<img src="res/img/recurso.png" alt="Importancia del agua" width="90%" class="border border-1 border-info rounded">
+			</div>
+		</div>
+		<div class="row bg-light py-3">
+			<font class="Gloucester">
+				<h2 class="m-0 text-primary">
+					Predicción de Consumo Futuro
+				</h2>
+			</font>
+			<p class="text-justify mt-3">
+				Utilizando modelos matemáticos, como la regresión lineal y polinómica, se proyectó el consumo de agua para el año 2025. Las predicciones indican que el consumo podría aumentar debido al crecimiento de la matrícula y la expansión de la infraestructura universitaria, lo que destaca la urgencia de tomar medidas preventivas desde ahora para evitar futuros problemas de abastecimiento.
+			</p>
+			<div class="row text-center">
+				<div class="col-md-6 col-lg-6 p-3">
+					<img src="res/img/grafica1.jpeg" alt="Gráfica 1" class="img-fluid" style="max-width: 100%; height: auto;">
+				</div>
+				<div class="col-md-6 col-lg-6 p-3">
+					<img src="res/img/grafica2.jpeg" alt="Gráfica 2" class="img-fluid" style="max-width: 100%; height: auto;">
+
+				</div>
+				<div class="row bg-light py-3">
+					<font class="Gloucester">
+						<h2 class="m-0 text-primary">
+							Pronóstico de ahorro con hidromedidores
+						</h2>
+					</font>
+					<p class="text-justify mt-3" style="width: 100%;">
+    En cuanto a la implementación de hidromedidores ultrasónicos en la Unidad Lerma, se realizó un pronóstico que estima un ahorro significativo en el consumo de agua. La medición precisa por áreas permitirá identificar y corregir fugas de agua, un factor clave en el desperdicio de recursos hídricos, mejorando la eficiencia general. Se estima que esta implementación podría generar un ahorro diario de aproximadamente 200,000 litros de agua, contribuyendo a una reducción considerable de los costos operativos y una gestión más eficiente de los recursos hídricos.
+</p>
+
+					
+                
+				<div class="col-md-6 col-lg-6 p-3">
+					<img src="res/img/grafica4.jpeg" alt="Gráfica 4" class="img-fluid" style="max-width: 100%; height: auto;">
+				</div>
+			</div>
+		</div>
+		
+			
+			</div>
+			
+			<div class="row">				
+				</button>
+				<button class="btn btn-primary card col p-0 m-3" data-bs-toggle="modal" data-bs-target="#modalCarenciaNacional">
+					<img src="res/img/gota.jpeg" alt="" class="card-img-top">
+					<h5 class="card-body d-inline-block mx-auto text-center"></h5>
+				</button>
+				<button class="btn btn-primary card col p-0 m-3" data-bs-toggle="modal" data-bs-target="#modalCarenciaNacional">
+					<img src="res/img/baño.jpeg" alt="" class="card-img-top">
+					<h5 class="card-body d-inline-block mx-auto text-center"></h5>
+				</button>
+
+			</div>
+		</div>
+	</section>
+	
+	<!---------------------><hr class="border border-primary border-2 opacity-75"><!------------------------->
+<section id="ComoCuidarElAgua">
+	<h1 class="text-center mb-3 Gloucester text-primary">- ¿Cómo podemos cuidar el agua? -</h1>
+	<div class="w-75 mx-auto accordion accordion-flush" id="cuidarDelAgua">
+		<div class="accordion-item">
+			<h2 class="accordion-header">
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#medidasPreventivas" aria-expanded="false" aria-controls="medidasPreventivas">
+					Medidas Preventivas
+				</button>
+			</h2>
+			<div id="medidasPreventivas" class="accordion-collapse collapse show" data-bs-parent="#cuidarDelAgua">
+				<div class="accordion-body bg-info-subtle">
+					<ul>
+						<li>Establecer un programa de mantenimiento preventivo para las instalaciones hidrosanitarias, asegurando que no haya fugas ni desperdicio de agua.</li>
+						<li>Aumentar la instalación de llaves ahorradoras y mingitorios secos en todos los módulos sanitarios para reducir el consumo innecesario de agua.</li>
+						<li>Aunque no se cuente con hidromedidores para el agua pluvial, se pueden establecer registros manuales o estimaciones del consumo en diferentes áreas para identificar patrones y áreas de mejora.</li
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="accordion-item">
+			<h2 class="accordion-header">
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Recomendaciones" aria-expanded="false" aria-controls="Recomendaciones">
+					Recomendaciones
+				</button>
+			</h2>
+			<div id="Recomendaciones" class="accordion-collapse collapse" data-bs-parent="#medidasPreventivas">
+				<div class="accordion-body bg-info-subtle">
+					<ul>
+						<li>Organizar foros o talleres donde se discutan las mejores prácticas en el uso del agua y se compartan experiencias sobre su conservación.</li>
+						<li>Integrar la educación sobre gestión del agua en los programas académicos para sensibilizar a los estudiantes desde su formación.</li>
+						<li>Formar un grupo multidisciplinario que supervise y evalúe las acciones relacionadas con la gestión del agua en la universidad.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="accordion-item">
+			<h2 class="accordion-header">
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Estrategias" aria-expanded="false" aria-controls="Estrategias">
+					Estrategias
+				</button>
+			</h2>
+			<div id="Estrategias" class="accordion-collapse collapse" data-bs-parent="#medidasPreventivas">
+				<div class="accordion-body bg-info-subtle">
+					<ul>
+						<li>Fomentar colaboraciones entre diferentes disciplinas (biología, ingeniería, arte) para diseñar soluciones innovadoras que promuevan la sostenibilidad hídrica.</li>
+						<li>Diseñar e implementar sistemas que utilicen agua pluvial para el riego automático de áreas verdes dentro de la universidad.</li>
+						<li>Crear un programa de incentivos para reconocer a aquellos estudiantes o grupos que implementen prácticas efectivas de ahorro de agua.</li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="accordion-item">
+			<h2 class="accordion-header">
+				<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#Propuestas" aria-expanded="false" aria-controls="Propuestas">
+					Propuestas
+				</button>
+			</h2>
+			<div id="Propuestas" class="accordion-collapse collapse" data-bs-parent="#medidasPreventivas">
+				<div class="accordion-body bg-info-subtle">
+					<ul>
+						<li>Invertir en tecnologías que mejoren el tratamiento y almacenamiento del agua pluvial y residual, aumentando su capacidad y eficiencia.</li>
+						<li>Establecer alianzas con organizaciones locales e instituciones educativas para compartir recursos y conocimientos sobre gestión sostenible del agua.</li>
+						<li>Fomentar proyectos de investigación que aborden problemas específicos relacionados con la gestión del agua en la UAM Lerma, generando soluciones basadas en datos concretos.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!---------------------><!---------------------><!---------------------><!---------------------><!--------------------->
+<center class="mt-4" id="CollageAgua">
+	<div class="gallery">
+	  <img src="res/img/SILLA.jpeg" alt="Collage" class="gallery-item">
+	  <img src="res/img/SALON.jpeg" alt="Collage" class="gallery-item">
+	  <img src="res/img/linea.jpeg" alt="Collage" class="gallery-item">
+	  <img src="res/img/medir.jpeg" alt="Collage" class="gallery-item">
+	  <img src="res/img/uni.jpeg" alt="Collage" class="gallery-item">
+	  <img src="res/img/gris.jpeg" alt="Collage" class="gallery-item">
+	 
+
+	</div>
+  </center>
+  
+  
+<!---------------------><hr class="border border-primary border-2 opacity-75"><!------------------------->
+	
+		<!-- ! /CONTENT/ ! -->
+</main>
+	
+
+	<!-- ! FOOTER ! -->
+	<footer class="w-100 text-center text-white pb-4 mt-5 bg-primary" style="bottom: 0%;">
+		<div class="container pt-4">
+			<div class="align-middle">
+				<a class="btn-guinda m-1" href="https://www.ler.uam.mx/ComunicacionUAML/la-uam-lerma-colabora-en-la-preservacion-del-medio-ambiente/">UAM</a>
+				
+		</div>
+		<hr class="border border-white border opacity-75 w-50 mx-auto">
+	  	<small class="text-center text-light mb-5">
+	    	Proyecto interdiciplinar 
+	  	</small>
+	</footer>
+	<!-- ! /FOOTER/ ! -->
+
+<!--! MODALS !-->
+<div class="modal fade" id="modalCuidadoAgua" tabindex="-1" aria-labelledby="modalCuidadoAguaLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h1 class="modal-title fs-5" id="modalCuidadoAguaLabel">El Cuidado del Agua</h1>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<p align="justify">Se analizó el consumo histórico de agua en la UAM Lerma a través de los recibos de agua de los años 2022 a 2024 proporcionados por OPDAPAS, y se realizaron entrevistas con responsables del área de gestión ambiental para entender los patrones de consumo y las posibles áreas de mejora. Sin embargo, se identificó que la universidad aún no dispone de tecnologías avanzadas como hidromedidores, lo cual limita el monitoreo detallado del consumo en tiempo real.</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+			</div>
+		</div>
+	</div>
+</div>					
+
+</div>
+
+<div class="modal fade" id="modalCarenciaMundial" tabindex="-1" aria-labelledby="modalCarenciaMundialLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h1 class="modal-title fs-5" id="modalCarenciaMundialLabel">Consumo de agua UAM Lerma</h1>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<p align="justify">INFO</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!--! MODALS !-->
+
+<script>
+	$(document).ready(function() {
+		$('div#cover').addClass('hide')
+		setTimeout(() => { $('div#cover').remove() }, "550");
+	});
+
+	function toggleIndex() {
+		var v = $("#hiddableIndex").hasClass('visually-hidden');
+		if(!v) {
+			$("#hiddableIndex").addClass('visually-hidden');
+			$("#hiddableIndex").addClass('d-none');
+		}
+		else {
+			$("#hiddableIndex").removeClass('d-none');
+			setTimeout(() => { $("#hiddableIndex").removeClass('visually-hidden') }, "100");
+		}
+	}
+</script>	
+</body>
+</html>
+<!--College Semi-Condensed, Dancing Script-->

@@ -1,0 +1,257 @@
+body {
+  background-position: 100% 0%;
+  background-image: url('../res/img/blanco.jpg'), linear-gradient(to bottom, #FFF 35%, #008eea 40%, #c914ef 60%);
+  background-repeat: no-repeat;
+  min-width: 520px;
+}
+
+.btn-guinda {
+  background-color: #952F57;
+  border-color: #4f152b;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+.btn-guinda:hover {
+  background-color: #b33465;
+  border-color: #4f152b;
+}
+
+.btn-guinda:active, .btn-guinda.active {
+  background-color: #ad265a;
+  border-color: #4f152b;
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+.btn-guinda:disabled, .btn-guinda.disabled {
+  background-color: #66273f;
+  border-color: #4f152b;
+}
+
+table {
+  border: 4px outset #33F;
+  text-align: justify;
+}
+
+table thead {
+  background: rgba(64, 133, 189, 0.7);
+  font-size: 1.5em;
+}
+
+
+
+table td:has(img) {
+  padding: 0px;
+}
+
+.hide {
+  opacity: 0;
+  transition: all ease 500ms;
+}
+
+.carousel-item img {
+  width: 100%;              /* Asegura que la imagen ocupe todo el ancho del contenedor */
+  height: auto;             /* Mantiene la proporción de la imagen */
+  object-fit: cover;        /* Cubre todo el área del contenedor, recortando la imagen si es necesario */
+  margin-top: -10px;        /* Ajusta el margen superior para reducir la separación */
+}
+
+
+
+.car-control {
+  background: rgba(30,30,30,0.1) !important;
+  transition: all linear 100ms;
+}
+
+.car-control:hover {
+  background: rgba(30,30,30,0.3);
+}
+
+button[data-bs-toggle="modal"] {
+  box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.51);
+  animation: hovering 3s ease-in-out infinite;
+}
+
+.img-fluid {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+.row.text-center > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#CollageAgua {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Ajuste automático según el tamaño de la pantalla */
+  gap: 20px;
+  width: 100%;
+  padding: 10px;
+}
+
+.gallery-item {
+  width: 100%;
+  height: auto;
+  border-radius: 10px; /* Puedes ajustar o quitar el borde redondeado */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+#TITLE {
+  position: relative;
+  height: 3.5rem;
+}
+
+#TITLE i:nth-child(1) {
+  position: absolute;
+  left: 0;
+  animation: bounce 0.8s 0s infinite;
+}
+
+#TITLE i:nth-child(2) {
+  position: absolute;
+  left: 1.6rem;
+  animation: bounce 0.8s 0.1s infinite;
+}
+
+#TITLE i:nth-child(3) {
+  position: absolute;
+  left: 3rem;
+  animation: bounce 0.8s 0.2s infinite;
+}
+
+#TITLE i:nth-child(4) {
+  position: absolute;
+  left: 4.6rem;
+  animation: bounce 0.8s 0.3s infinite;
+}
+
+#TITLE i:nth-child(5) {
+  position: absolute;
+  left: 6.8rem;
+  animation: bounce 0.8s 0.4s infinite;
+}
+
+#TITLE i:nth-child(6) {
+  position: absolute;
+  left: 8.5rem;
+  animation: bounce 0.8s 0.5s infinite;
+}
+
+#TITLE i:nth-child(7) {
+  position: absolute;
+  left: 9.4rem;
+  animation: bounce 0.8s 0.6s infinite;
+}
+
+#TITLE i:nth-child(8) {
+  position: absolute;
+  left: 11rem;
+  animation: bounce 0.8s 0.7s infinite;
+}
+
+#TITLE i:nth-child(9) {
+  position: absolute;
+  left: 12.6rem;
+  animation: bounce 0.8s 0.8s infinite;
+}
+
+#TITLE i:nth-child(10) {
+  position: absolute;
+  left: 14.2rem;
+  animation: bounce 0.8s 0.9s infinite;
+}
+
+#TITLE i:nth-child(11) {
+  position: absolute;
+  left: 15.8rem;
+  animation: bounce 0.8s 1s infinite;
+}
+
+#TITLE i:nth-child(12) {
+  position: absolute;
+  left: 17.4rem;
+  animation: bounce 0.8s 1.1s infinite;
+}
+
+#TITLE i:nth-child(13) {
+  position: absolute;
+  left: 19rem;
+  animation: bounce 0.8s 1.2s infinite;
+}
+
+#TITLE i:nth-child(14) {
+  position: absolute;
+  left: 20.6rem;
+  animation: bounce 0.8s 1.3s infinite;
+}
+
+#TITLE i:nth-child(15) {
+  position: absolute;
+  left: 22.2rem;
+  animation: bounce 0.8s 1.4s infinite;
+}
+
+#TITLE i:nth-child(16) {
+  position: absolute;
+  left: 23.4rem;
+  animation: bounce 0.8s 1.5s infinite;
+}
+
+#TITLE i:nth-child(17) {
+  position: absolute;
+  left: 25.4rem;
+  animation: bounce 0.8s 1.6s infinite;
+}
+
+#TITLE i:nth-child(18) {
+  position: absolute;
+  left: 27rem;
+  animation: bounce 0.8s 1.7s infinite;
+}
+
+#TITLE i:nth-child(19) {
+  position: absolute;
+  left: 28.6rem;
+  animation: bounce 0.8s 1.8s infinite;
+}
+
+@keyframes hovering {
+  0%, 100% {
+    transform: translateY(0);
+    box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.51);
+  }
+  50% {
+    transform: translateY(-10px);
+    box-shadow: 10px 20px 20px 0px rgba(0,0,0,0.51);
+  }
+}
+
+@keyframes bounce {
+  0%,100% {top: 0;transform: scale(1);}
+  30% {top: -15%;}
+  50% {transform: scale(1);}
+  90% {top: 0;transform: scale(1.2,0.8);}
+}
+
+
+@media (min-width: 1000px) {
+  .carousel-item img {
+    height: 75vh;
+  }
+}
+
+
+
+
